@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.source           = { :git => 'https://github.com/vpeschenkov/LetterAvatarKit.git', :tag => spec.version.to_s }
   spec.source_files     = 'LetterAvatarKit/*.{h,swift}', 'LetterAvatarKit/Extensions/*.{swift}'
   spec.requires_arc     = true
-  spec.framework        = 'Foundation', 'UIKit', 'SwiftUI'
+  spec.framework        = 'Foundation', 'UIKit'
+  spec.weak_frameworks  = 'SwiftUI'
   spec.swift_version    = '5.0'
 end
